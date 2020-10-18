@@ -1,0 +1,17 @@
+
+server:
+  port: 8083
+spring:
+  profiles:
+    active: '@profileActive@'
+  application:
+    name: blog-web
+  thymeleaf:
+    prefix: classpath:/templates/
+    check-template: true
+    suffix: .html
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    mode: HTML5
+    cache: false
